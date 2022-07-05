@@ -1,18 +1,17 @@
 package com.lu.app.rest.Controller;
 
+import com.lu.app.rest.Models.User;
 import com.lu.app.rest.Repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
 
 @RestController
-public class HomePageController
+public class ApiController
 {
-    /*
     @Autowired
     private UserRepo userRepo;
-
 
     @GetMapping(value= "/")
     public String getPage()
@@ -51,14 +50,5 @@ public class HomePageController
         User deleteUser = userRepo.findById(id).get();
         userRepo.delete(deleteUser);
         return "Deleted user with the id: " + id;
-    }
-    */
-
-    @GetMapping
-    public ModelAndView homePage()
-    {
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("serviceApp/src/app/app.component.html");
-        return modelAndView;
     }
 }
