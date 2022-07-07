@@ -1,0 +1,38 @@
+.container{
+ width: 90%;
+ padding: 5%;
+ border-radius: 25px;
+ margin-top: 10%;
+ border: 5px solid black;
+}
+
+label{
+  font-family: Andale Mono, monospace;
+}
+
+input{
+  width:100%;
+
+}
+
+@media(min-width:576px){
+  .container{
+      padding:3rem;
+      padding-top:0rem;
+  }
+
+}
+
+@media (min-width:768px){
+  .container{
+      padding:5rem;
+      padding-top:0rem;
+  }
+}
+@media(min-width:992px){
+  .container{
+      padding:10rem;
+      padding-top:0rem;
+  }
+
+}

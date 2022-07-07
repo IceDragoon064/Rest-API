@@ -1,0 +1,13 @@
+.toolbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  padding-left: 10px;
+  font-family: Andale Mono, monospace;
+  overflow: hidden;
+}
